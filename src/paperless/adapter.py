@@ -103,6 +103,11 @@ class CustomSocialAccountAdapter(DefaultSocialAccountAdapter):
         # save_user also calls account_adapter save_user which would set ACCOUNT_DEFAULT_GROUPS
         user: User = super().save_user(request, sociallogin, form)
         group_names: list[str] = settings.SOCIAL_ACCOUNT_DEFAULT_GROUPS
+        social_account_groups = sociallogin.account.extra_data.get("groups", [])
+        import logging
+
+        logger = logging.getLogger("paperless.sociclaccount_adapter")
+        logger.info(f"social account groups: {social_account_groups}")
         if len(group_names) > 0:
             groups = Group.objects.filter(name__in=group_names)
             user.groups.add(*groups)
