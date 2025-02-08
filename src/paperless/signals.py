@@ -30,3 +30,16 @@ def handle_failed_login(sender, credentials, request, **kwargs):
             log_output += f" from private IP `{client_ip}`."
 
     logger.info(log_output)
+
+
+def handle_social_account_updated(sender, request, sociallogin, **kwargs):
+    """
+    Handle the social account update signal.
+    """
+    try:
+        social_account_groups = sociallogin.account.extra_data.get("groups", [])
+        logger.info(
+            f"handle_social_account_updated social account groups: {social_account_groups}",
+        )
+    except Exception:
+        pass
