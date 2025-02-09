@@ -476,6 +476,7 @@ export class WorkflowEditDialogComponent
           body: new FormControl(action.webhook?.body),
           headers: new FormControl(action.webhook?.headers),
           include_document: new FormControl(!!action.webhook?.include_document),
+          use_original_filename: new FormControl(!!action.webhook.use_original_filename),
         }),
       }),
       { emitEvent }
