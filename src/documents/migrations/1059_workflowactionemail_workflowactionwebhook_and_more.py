@@ -52,6 +52,13 @@ class Migration(migrations.Migration):
                         verbose_name="include document in email",
                     ),
                 ),
+                (
+                    "use_original_filename",
+                    models.BooleanField(
+                        default=False,
+                        verbose_name="use the original filename in email",
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
@@ -109,6 +116,13 @@ class Migration(migrations.Migration):
                     models.BooleanField(
                         default=False,
                         verbose_name="include document in webhook",
+                    ),
+                ),
+                (
+                    "use_original_filename",
+                    models.BooleanField(
+                        default=False,
+                        verbose_name="use original filename in webhook",
                     ),
                 ),
             ],
