@@ -75,7 +75,7 @@
   <pngx-custom-fields-dropdown
     *pngxIfPermissions="{ action: PermissionAction.View, type: PermissionType.CustomField }"
     [documentId]="documentId"
-    [disabled]="!userIsOwner || !userCanEdit"
+    [disabled]="!userCanEdit"
     [existingFields]="document?.custom_fields"
     (created)="refreshCustomFields()"
     (added)="addField($event)">
