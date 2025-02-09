@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paperless-ngx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-27 08:19-0800\n"
-"PO-Revision-Date: 2025-01-27 16:20\n"
+"POT-Creation-Date: 2025-01-28 12:17-0800\n"
+"PO-Revision-Date: 2025-02-07 18:33\n"
 "Last-Translator: \n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
@@ -90,7 +90,7 @@ msgid "Automatic"
 msgstr "자동"
 
 #: documents/models.py:67 documents/models.py:433 documents/models.py:1493
-#: paperless_mail/models.py:23 paperless_mail/models.py:136
+#: paperless_mail/models.py:23 paperless_mail/models.py:143
 msgid "name"
 msgstr "이름"
 
@@ -272,7 +272,7 @@ msgstr "정보"
 msgid "warning"
 msgstr "경고"
 
-#: documents/models.py:387 paperless_mail/models.py:350
+#: documents/models.py:387 paperless_mail/models.py:363
 msgid "error"
 msgstr "오류"
 
@@ -812,7 +812,7 @@ msgstr "지정된 경우 경로와 일치하는 문서만 사용합니다. * 와
 msgid "filter filename"
 msgstr "파일 이름 필터"
 
-#: documents/models.py:1066 paperless_mail/models.py:193
+#: documents/models.py:1066 paperless_mail/models.py:200
 msgid "Only consume documents which entirely match this filename if specified. Wildcards such as *.pdf or *invoice* are allowed. Case insensitive."
 msgstr "지정된 경우 파일 이름과 완전히 일치하는 문서만 사용합니다. *.pdf와 같은 와일드카드 또는 invoice와 같은 것이 허용됩니다. 대소문자를 구분하지 않습니다."
 
@@ -976,15 +976,15 @@ msgstr "제목 지정"
 msgid "Assign a document title, can include some placeholders, see documentation."
 msgstr "문서 제목을 지정하고 일부 자리 표시자를 포함할 수 있습니다(문서 참조)."
 
-#: documents/models.py:1287 paperless_mail/models.py:261
+#: documents/models.py:1287 paperless_mail/models.py:274
 msgid "assign this tag"
 msgstr "이 태그 할당"
 
-#: documents/models.py:1296 paperless_mail/models.py:269
+#: documents/models.py:1296 paperless_mail/models.py:282
 msgid "assign this document type"
 msgstr "이 문서 유형 지정"
 
-#: documents/models.py:1305 paperless_mail/models.py:283
+#: documents/models.py:1305 paperless_mail/models.py:296
 msgid "assign this correspondent"
 msgstr "이 담당자를 할당합니다."
 
@@ -1100,7 +1100,7 @@ msgstr "워크플로 작업"
 msgid "workflow actions"
 msgstr "워크플로 작업들"
 
-#: documents/models.py:1495 paperless_mail/models.py:138
+#: documents/models.py:1495 paperless_mail/models.py:145
 msgid "order"
 msgstr "주문"
 
@@ -1112,7 +1112,7 @@ msgstr "트리거"
 msgid "actions"
 msgstr "동작"
 
-#: documents/models.py:1511 paperless_mail/models.py:147
+#: documents/models.py:1511 paperless_mail/models.py:154
 msgid "enabled"
 msgstr "활성화됨"
 
@@ -1804,154 +1804,178 @@ msgid "Process all files, including 'inline' attachments."
 msgstr "'인라인' 첨부파일을 포함한 모든 파일을 처리합니다."
 
 #: paperless_mail/models.py:119
-msgid "Delete"
-msgstr "삭제"
+msgid "System default"
+msgstr ""
 
 #: paperless_mail/models.py:120
-msgid "Move to specified folder"
-msgstr "지정된 폴더로 이동"
+msgid "Text, then HTML"
+msgstr ""
 
 #: paperless_mail/models.py:121
-msgid "Mark as read, don't process read mails"
+msgid "HTML, then text"
 msgstr ""
 
 #: paperless_mail/models.py:122
+msgid "HTML only"
+msgstr ""
+
+#: paperless_mail/models.py:123
+msgid "Text only"
+msgstr ""
+
+#: paperless_mail/models.py:126
+msgid "Delete"
+msgstr "삭제"
+
+#: paperless_mail/models.py:127
+msgid "Move to specified folder"
+msgstr "지정된 폴더로 이동"
+
+#: paperless_mail/models.py:128
+msgid "Mark as read, don't process read mails"
+msgstr ""
+
+#: paperless_mail/models.py:129
 msgid "Flag the mail, don't process flagged mails"
 msgstr "메일에 플래그를 지정하고, 플래그를 지정한 메일은 처리하지 않습니다."
 
-#: paperless_mail/models.py:123
+#: paperless_mail/models.py:130
 msgid "Tag the mail with specified tag, don't process tagged mails"
 msgstr "지정된 태그로 메일에 태그를 지정하고 태그가 지정된 메일은 처리하지 않습니다."
 
-#: paperless_mail/models.py:126
+#: paperless_mail/models.py:133
 msgid "Use subject as title"
 msgstr ""
 
-#: paperless_mail/models.py:127
+#: paperless_mail/models.py:134
 msgid "Use attachment filename as title"
 msgstr "첨부 파일 이름을 제목으로 사용"
 
-#: paperless_mail/models.py:128
+#: paperless_mail/models.py:135
 msgid "Do not assign title from rule"
 msgstr "규칙에서 제목 지정하지 않기"
 
-#: paperless_mail/models.py:131
+#: paperless_mail/models.py:138
 msgid "Do not assign a correspondent"
 msgstr "담당자를 지정하지 마십시오."
 
-#: paperless_mail/models.py:132
+#: paperless_mail/models.py:139
 msgid "Use mail address"
 msgstr "메일 주소 사용"
 
-#: paperless_mail/models.py:133
+#: paperless_mail/models.py:140
 msgid "Use name (or mail address if not available)"
 msgstr "이름(또는 사용할 수 없는 경우 메일 주소) 사용"
 
-#: paperless_mail/models.py:134
+#: paperless_mail/models.py:141
 msgid "Use correspondent selected below"
 msgstr "아래에서 선택한 담당자 사용"
 
-#: paperless_mail/models.py:144
+#: paperless_mail/models.py:151
 msgid "account"
 msgstr "계정"
 
-#: paperless_mail/models.py:150 paperless_mail/models.py:305
+#: paperless_mail/models.py:157 paperless_mail/models.py:318
 msgid "folder"
 msgstr "폴더"
 
-#: paperless_mail/models.py:154
+#: paperless_mail/models.py:161
 msgid "Subfolders must be separated by a delimiter, often a dot ('.') or slash ('/'), but it varies by mail server."
 msgstr "하위 폴더는 점('.') 또는 슬래시('/')와 같은 구분 기호로 구분해야 하지만 메일 서버에 따라 다릅니다."
 
-#: paperless_mail/models.py:160
+#: paperless_mail/models.py:167
 msgid "filter from"
 msgstr "에서 필터링"
 
-#: paperless_mail/models.py:167
+#: paperless_mail/models.py:174
 msgid "filter to"
 msgstr "필터로"
 
-#: paperless_mail/models.py:174
+#: paperless_mail/models.py:181
 msgid "filter subject"
 msgstr "제목 필터링"
 
-#: paperless_mail/models.py:181
+#: paperless_mail/models.py:188
 msgid "filter body"
 msgstr "필터 본문"
 
-#: paperless_mail/models.py:188
+#: paperless_mail/models.py:195
 msgid "filter attachment filename inclusive"
 msgstr "첨부 파일 이름 포함 필터링"
 
-#: paperless_mail/models.py:200
+#: paperless_mail/models.py:207
 msgid "filter attachment filename exclusive"
 msgstr "필터 첨부 파일명 전용"
 
-#: paperless_mail/models.py:205
+#: paperless_mail/models.py:212
 msgid "Do not consume documents which entirely match this filename if specified. Wildcards such as *.pdf or *invoice* are allowed. Case insensitive."
 msgstr "지정된 경우 이 파일명과 완전히 일치하는 문서는 사용하지 마세요..pdf 또는 *인보이스*와 같은 와일드카드는 허용됩니다. 대소문자를 구분하지 않습니다."
 
-#: paperless_mail/models.py:212
+#: paperless_mail/models.py:219
 msgid "maximum age"
 msgstr "최대 나이"
 
-#: paperless_mail/models.py:214
+#: paperless_mail/models.py:221
 msgid "Specified in days."
 msgstr "일 단위로 지정됩니다."
 
-#: paperless_mail/models.py:218
+#: paperless_mail/models.py:225
 msgid "attachment type"
 msgstr "첨부 파일 유형"
 
-#: paperless_mail/models.py:222
+#: paperless_mail/models.py:229
 msgid "Inline attachments include embedded images, so it's best to combine this option with a filename filter."
 msgstr "인라인 첨부 파일에는 임베드된 이미지가 포함되므로 이 옵션과 파일 이름 필터를 함께 사용하는 것이 가장 좋습니다."
 
-#: paperless_mail/models.py:228
+#: paperless_mail/models.py:235
 msgid "consumption scope"
 msgstr "사용 범위"
 
-#: paperless_mail/models.py:234
+#: paperless_mail/models.py:241
+msgid "pdf layout"
+msgstr ""
+
+#: paperless_mail/models.py:247
 msgid "action"
 msgstr "작업"
 
-#: paperless_mail/models.py:240
+#: paperless_mail/models.py:253
 msgid "action parameter"
 msgstr "액션 매개변수"
 
-#: paperless_mail/models.py:245
+#: paperless_mail/models.py:258
 msgid "Additional parameter for the action selected above, i.e., the target folder of the move to folder action. Subfolders must be separated by dots."
 msgstr "위에서 선택한 작업에 대한 추가 매개변수, 즉 폴더로 이동 작업의 대상 폴더입니다. 하위 폴더는 점으로 구분해야 합니다."
 
-#: paperless_mail/models.py:253
+#: paperless_mail/models.py:266
 msgid "assign title from"
 msgstr "에서 제목 지정"
 
-#: paperless_mail/models.py:273
+#: paperless_mail/models.py:286
 msgid "assign correspondent from"
 msgstr "에서 통신원을 지정합니다."
 
-#: paperless_mail/models.py:287
+#: paperless_mail/models.py:300
 msgid "Assign the rule owner to documents"
 msgstr "문서에 규칙 소유자 지정"
 
-#: paperless_mail/models.py:313
+#: paperless_mail/models.py:326
 msgid "uid"
 msgstr "uid"
 
-#: paperless_mail/models.py:321
+#: paperless_mail/models.py:334
 msgid "subject"
 msgstr "제목"
 
-#: paperless_mail/models.py:329
+#: paperless_mail/models.py:342
 msgid "received"
 msgstr "받음"
 
-#: paperless_mail/models.py:336
+#: paperless_mail/models.py:349
 msgid "processed"
 msgstr "완료됨"
 
-#: paperless_mail/models.py:342
+#: paperless_mail/models.py:355
 msgid "status"
 msgstr "상태"
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paperless-ngx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-27 08:19-0800\n"
-"PO-Revision-Date: 2025-01-27 16:20\n"
+"POT-Creation-Date: 2025-01-28 12:17-0800\n"
+"PO-Revision-Date: 2025-02-07 18:33\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -47,7 +47,7 @@ msgstr "{name!r} не является допустимым пользовате
 
 #: documents/filters.py:510
 msgid "{data_type} does not support query expr {expr!r}."
-msgstr "{data_type} не поддерживает запрос expr {expr!r}."
+msgstr "{data_type} не поддерживает запрос {expr!r}."
 
 #: documents/filters.py:618
 msgid "Maximum nesting depth exceeded."
@@ -90,7 +90,7 @@ msgid "Automatic"
 msgstr "Автоматически"
 
 #: documents/models.py:67 documents/models.py:433 documents/models.py:1493
-#: paperless_mail/models.py:23 paperless_mail/models.py:136
+#: paperless_mail/models.py:23 paperless_mail/models.py:143
 msgid "name"
 msgstr "имя"
 
@@ -272,7 +272,7 @@ msgstr "информация"
 msgid "warning"
 msgstr "предупреждение"
 
-#: documents/models.py:387 paperless_mail/models.py:350
+#: documents/models.py:387 paperless_mail/models.py:363
 msgid "error"
 msgstr "ошибка"
 
@@ -486,7 +486,7 @@ msgstr "больше похожих"
 
 #: documents/models.py:504
 msgid "has tags in"
-msgstr "имеет этикетки в"
+msgstr "имеет теги в"
 
 #: documents/models.py:505
 msgid "ASN greater than"
@@ -542,7 +542,7 @@ msgstr "не имеет владельца в"
 
 #: documents/models.py:518
 msgid "has custom field value"
-msgstr "имеет спецзначение поля"
+msgstr "имеет значение пользовательского поля"
 
 #: documents/models.py:519
 msgid "is shared by me"
@@ -610,7 +610,7 @@ msgstr "Имя файла, для которого была запущена з�
 
 #: documents/models.py:671
 msgid "Task Name"
-msgstr "Название задачи"
+msgstr "Название Задачи"
 
 #: documents/models.py:672
 msgid "Name of the Task which was run"
@@ -746,11 +746,11 @@ msgstr ""
 
 #: documents/models.py:856
 msgid "custom field"
-msgstr "спецполе"
+msgstr "Пользовательское поле"
 
 #: documents/models.py:857
 msgid "custom fields"
-msgstr "спецполя"
+msgstr "Пользовательские поля"
 
 #: documents/models.py:954
 msgid "custom field instance"
@@ -812,7 +812,7 @@ msgstr "Обрабатывает только документы, соответ
 msgid "filter filename"
 msgstr "фильтр имя файла"
 
-#: documents/models.py:1066 paperless_mail/models.py:193
+#: documents/models.py:1066 paperless_mail/models.py:200
 msgid "Only consume documents which entirely match this filename if specified. Wildcards such as *.pdf or *invoice* are allowed. Case insensitive."
 msgstr "Обрабатывать только документы, которые полностью совпадают с именем файла (если оно указано). Маски, например *.pdf или *счет*, разрешены. Без учёта регистра."
 
@@ -976,15 +976,15 @@ msgstr "присвоить заголовок"
 msgid "Assign a document title, can include some placeholders, see documentation."
 msgstr "Назначьте заголовок документа. Оно может содержать заполнители, см. документацию."
 
-#: documents/models.py:1287 paperless_mail/models.py:261
+#: documents/models.py:1287 paperless_mail/models.py:274
 msgid "assign this tag"
 msgstr "назначить этот тег"
 
-#: documents/models.py:1296 paperless_mail/models.py:269
+#: documents/models.py:1296 paperless_mail/models.py:282
 msgid "assign this document type"
 msgstr "назначить этот тип документа"
 
-#: documents/models.py:1305 paperless_mail/models.py:283
+#: documents/models.py:1305 paperless_mail/models.py:296
 msgid "assign this correspondent"
 msgstr "назначить этого корреспондента"
 
@@ -1100,7 +1100,7 @@ msgstr "действия автоматизации"
 msgid "workflow actions"
 msgstr "действия автоматизации"
 
-#: documents/models.py:1495 paperless_mail/models.py:138
+#: documents/models.py:1495 paperless_mail/models.py:145
 msgid "order"
 msgstr "порядок"
 
@@ -1112,7 +1112,7 @@ msgstr "пусковые механизмы"
 msgid "actions"
 msgstr "действия"
 
-#: documents/models.py:1511 paperless_mail/models.py:147
+#: documents/models.py:1511 paperless_mail/models.py:154
 msgid "enabled"
 msgstr "включено"
 
@@ -1803,154 +1803,178 @@ msgid "Process all files, including 'inline' attachments."
 msgstr "Обрабатывать все файлы, включая 'встроенные' вложения."
 
 #: paperless_mail/models.py:119
+msgid "System default"
+msgstr ""
+
+#: paperless_mail/models.py:120
+msgid "Text, then HTML"
+msgstr ""
+
+#: paperless_mail/models.py:121
+msgid "HTML, then text"
+msgstr ""
+
+#: paperless_mail/models.py:122
+msgid "HTML only"
+msgstr ""
+
+#: paperless_mail/models.py:123
+msgid "Text only"
+msgstr ""
+
+#: paperless_mail/models.py:126
 msgid "Delete"
 msgstr "Удалить"
 
-#: paperless_mail/models.py:120
+#: paperless_mail/models.py:127
 msgid "Move to specified folder"
 msgstr "Переместить в указанную папку"
 
-#: paperless_mail/models.py:121
+#: paperless_mail/models.py:128
 msgid "Mark as read, don't process read mails"
 msgstr "Пометить как прочитанное, не обрабатывать прочитанные письма"
 
-#: paperless_mail/models.py:122
+#: paperless_mail/models.py:129
 msgid "Flag the mail, don't process flagged mails"
 msgstr "Пометить почту, не обрабатывать помеченные письма"
 
-#: paperless_mail/models.py:123
+#: paperless_mail/models.py:130
 msgid "Tag the mail with specified tag, don't process tagged mails"
 msgstr "Отметить почту указанной этикеткой, не обрабатывать этикетированные письма"
 
-#: paperless_mail/models.py:126
+#: paperless_mail/models.py:133
 msgid "Use subject as title"
 msgstr "Тема в качестве заголовка"
 
-#: paperless_mail/models.py:127
+#: paperless_mail/models.py:134
 msgid "Use attachment filename as title"
 msgstr "Использовать имя вложенного файла как заголовок"
 
-#: paperless_mail/models.py:128
+#: paperless_mail/models.py:135
 msgid "Do not assign title from rule"
 msgstr "Использовать тему в качестве заголовки"
 
-#: paperless_mail/models.py:131
+#: paperless_mail/models.py:138
 msgid "Do not assign a correspondent"
 msgstr "Не назначать корреспондента"
 
-#: paperless_mail/models.py:132
+#: paperless_mail/models.py:139
 msgid "Use mail address"
 msgstr "Использовать email адрес"
 
-#: paperless_mail/models.py:133
+#: paperless_mail/models.py:140
 msgid "Use name (or mail address if not available)"
 msgstr "Использовать имя (или адрес электронной почты, если недоступно)"
 
-#: paperless_mail/models.py:134
+#: paperless_mail/models.py:141
 msgid "Use correspondent selected below"
 msgstr "Использовать корреспондента, выбранного ниже"
 
-#: paperless_mail/models.py:144
+#: paperless_mail/models.py:151
 msgid "account"
 msgstr "Учётная запись"
 
-#: paperless_mail/models.py:150 paperless_mail/models.py:305
+#: paperless_mail/models.py:157 paperless_mail/models.py:318
 msgid "folder"
 msgstr "каталог"
 
-#: paperless_mail/models.py:154
+#: paperless_mail/models.py:161
 msgid "Subfolders must be separated by a delimiter, often a dot ('.') or slash ('/'), but it varies by mail server."
 msgstr "Подпапки должны быть отделены разделителем, часто точкой ('.') или косой чертой ('/'), но это зависит от почтового сервера."
 
-#: paperless_mail/models.py:160
+#: paperless_mail/models.py:167
 msgid "filter from"
 msgstr "фильтр по отправителю"
 
-#: paperless_mail/models.py:167
+#: paperless_mail/models.py:174
 msgid "filter to"
 msgstr "фильтр по"
 
-#: paperless_mail/models.py:174
+#: paperless_mail/models.py:181
 msgid "filter subject"
 msgstr "фильтр по теме"
 
-#: paperless_mail/models.py:181
+#: paperless_mail/models.py:188
 msgid "filter body"
 msgstr "фильтр по тексту сообщения"
 
-#: paperless_mail/models.py:188
+#: paperless_mail/models.py:195
 msgid "filter attachment filename inclusive"
 msgstr "фильтр по именю файла вложения (включительно)"
 
-#: paperless_mail/models.py:200
+#: paperless_mail/models.py:207
 msgid "filter attachment filename exclusive"
 msgstr "фильтр по именю файла вложения (исключительно)"
 
-#: paperless_mail/models.py:205
+#: paperless_mail/models.py:212
 msgid "Do not consume documents which entirely match this filename if specified. Wildcards such as *.pdf or *invoice* are allowed. Case insensitive."
 msgstr "Не используйте документы, полностью совпадающие с этим именем, если оно указано. Допускаются подстановочные знаки, такие как *.pdf или *invoice*. Нечувствительность к регистру."
 
-#: paperless_mail/models.py:212
+#: paperless_mail/models.py:219
 msgid "maximum age"
 msgstr "Максимальный возраст"
 
-#: paperless_mail/models.py:214
+#: paperless_mail/models.py:221
 msgid "Specified in days."
 msgstr "Указывается в днях."
 
-#: paperless_mail/models.py:218
+#: paperless_mail/models.py:225
 msgid "attachment type"
 msgstr "Тип вложения"
 
-#: paperless_mail/models.py:222
+#: paperless_mail/models.py:229
 msgid "Inline attachments include embedded images, so it's best to combine this option with a filename filter."
 msgstr "Вложенные вложения включая встраиваемые изображения. Лучше совместить эту опцию с фильтром по имени вложения."
 
-#: paperless_mail/models.py:228
+#: paperless_mail/models.py:235
 msgid "consumption scope"
 msgstr "объем обработки"
 
-#: paperless_mail/models.py:234
+#: paperless_mail/models.py:241
+msgid "pdf layout"
+msgstr ""
+
+#: paperless_mail/models.py:247
 msgid "action"
 msgstr "действие"
 
-#: paperless_mail/models.py:240
+#: paperless_mail/models.py:253
 msgid "action parameter"
 msgstr "параметр действия"
 
-#: paperless_mail/models.py:245
+#: paperless_mail/models.py:258
 msgid "Additional parameter for the action selected above, i.e., the target folder of the move to folder action. Subfolders must be separated by dots."
 msgstr "Дополнительный параметр для указанного выше действия, то есть целевая папка операции перемещения в папку. Вложенные папки должны быть разделены точками."
 
-#: paperless_mail/models.py:253
+#: paperless_mail/models.py:266
 msgid "assign title from"
 msgstr "назначить заголовок из"
 
-#: paperless_mail/models.py:273
+#: paperless_mail/models.py:286
 msgid "assign correspondent from"
 msgstr "назначить корреспондента из"
 
-#: paperless_mail/models.py:287
+#: paperless_mail/models.py:300
 msgid "Assign the rule owner to documents"
 msgstr "Назначить документам правилавладелеца"
 
-#: paperless_mail/models.py:313
+#: paperless_mail/models.py:326
 msgid "uid"
 msgstr "uid"
 
-#: paperless_mail/models.py:321
+#: paperless_mail/models.py:334
 msgid "subject"
 msgstr "тема"
 
-#: paperless_mail/models.py:329
+#: paperless_mail/models.py:342
 msgid "received"
 msgstr "получено"
 
-#: paperless_mail/models.py:336
+#: paperless_mail/models.py:349
 msgid "processed"
 msgstr "обработано"
 
-#: paperless_mail/models.py:342
+#: paperless_mail/models.py:355
 msgid "status"
 msgstr "статус"
 

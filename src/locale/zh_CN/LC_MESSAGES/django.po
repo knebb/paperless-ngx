@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paperless-ngx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-27 08:19-0800\n"
-"PO-Revision-Date: 2025-01-27 16:20\n"
+"POT-Creation-Date: 2025-01-28 12:17-0800\n"
+"PO-Revision-Date: 2025-02-07 18:33\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -55,7 +55,7 @@ msgstr "超出最大嵌套深度。"
 
 #: documents/filters.py:785
 msgid "Custom field not found"
-msgstr ""
+msgstr "Custom field not found"
 
 #: documents/models.py:41 documents/models.py:801
 msgid "owner"
@@ -90,7 +90,7 @@ msgid "Automatic"
 msgstr "自动"
 
 #: documents/models.py:67 documents/models.py:433 documents/models.py:1493
-#: paperless_mail/models.py:23 paperless_mail/models.py:136
+#: paperless_mail/models.py:23 paperless_mail/models.py:143
 msgid "name"
 msgstr "名称"
 
@@ -272,7 +272,7 @@ msgstr "信息"
 msgid "warning"
 msgstr "警告"
 
-#: documents/models.py:387 paperless_mail/models.py:350
+#: documents/models.py:387 paperless_mail/models.py:363
 msgid "error"
 msgstr "错误"
 
@@ -812,7 +812,7 @@ msgstr "只消耗匹配了指定路径的文档。路径指定中允许使用*�
 msgid "filter filename"
 msgstr "过滤文件名"
 
-#: documents/models.py:1066 paperless_mail/models.py:193
+#: documents/models.py:1066 paperless_mail/models.py:200
 msgid "Only consume documents which entirely match this filename if specified. Wildcards such as *.pdf or *invoice* are allowed. Case insensitive."
 msgstr "如果指定了文件名，只处理完全匹配此文件名的文档。允许使用通配符，如 *.pdf 或 *发票*。不区分大小写。"
 
@@ -976,15 +976,15 @@ msgstr "指定标题"
 msgid "Assign a document title, can include some placeholders, see documentation."
 msgstr "指定一个文档标题，可以包含一些占位符，参见文档。"
 
-#: documents/models.py:1287 paperless_mail/models.py:261
+#: documents/models.py:1287 paperless_mail/models.py:274
 msgid "assign this tag"
 msgstr "分配此标签"
 
-#: documents/models.py:1296 paperless_mail/models.py:269
+#: documents/models.py:1296 paperless_mail/models.py:282
 msgid "assign this document type"
 msgstr "分配此文档类型"
 
-#: documents/models.py:1305 paperless_mail/models.py:283
+#: documents/models.py:1305 paperless_mail/models.py:296
 msgid "assign this correspondent"
 msgstr "分配此联系人"
 
@@ -1100,7 +1100,7 @@ msgstr "工作流动作"
 msgid "workflow actions"
 msgstr "工作流动作"
 
-#: documents/models.py:1495 paperless_mail/models.py:138
+#: documents/models.py:1495 paperless_mail/models.py:145
 msgid "order"
 msgstr "排序"
 
@@ -1112,7 +1112,7 @@ msgstr "触发器"
 msgid "actions"
 msgstr "动作"
 
-#: documents/models.py:1511 paperless_mail/models.py:147
+#: documents/models.py:1511 paperless_mail/models.py:154
 msgid "enabled"
 msgstr "已启用"
 
@@ -1804,154 +1804,178 @@ msgid "Process all files, including 'inline' attachments."
 msgstr "处理所有文件，包括“内嵌”附件。"
 
 #: paperless_mail/models.py:119
+msgid "System default"
+msgstr ""
+
+#: paperless_mail/models.py:120
+msgid "Text, then HTML"
+msgstr ""
+
+#: paperless_mail/models.py:121
+msgid "HTML, then text"
+msgstr ""
+
+#: paperless_mail/models.py:122
+msgid "HTML only"
+msgstr ""
+
+#: paperless_mail/models.py:123
+msgid "Text only"
+msgstr ""
+
+#: paperless_mail/models.py:126
 msgid "Delete"
 msgstr "删除"
 
-#: paperless_mail/models.py:120
+#: paperless_mail/models.py:127
 msgid "Move to specified folder"
 msgstr "移动到指定文件夹"
 
-#: paperless_mail/models.py:121
+#: paperless_mail/models.py:128
 msgid "Mark as read, don't process read mails"
 msgstr "标记为已读，不处理已读邮件"
 
-#: paperless_mail/models.py:122
+#: paperless_mail/models.py:129
 msgid "Flag the mail, don't process flagged mails"
 msgstr "标记邮件，不处理已标记的邮件"
 
-#: paperless_mail/models.py:123
+#: paperless_mail/models.py:130
 msgid "Tag the mail with specified tag, don't process tagged mails"
 msgstr "用指定标签标记邮件，不要处理已标记的邮件"
 
-#: paperless_mail/models.py:126
+#: paperless_mail/models.py:133
 msgid "Use subject as title"
 msgstr "使用主题作为标题"
 
-#: paperless_mail/models.py:127
+#: paperless_mail/models.py:134
 msgid "Use attachment filename as title"
 msgstr "使用附件名作为标题"
 
-#: paperless_mail/models.py:128
+#: paperless_mail/models.py:135
 msgid "Do not assign title from rule"
 msgstr "不从规则分配标题"
 
-#: paperless_mail/models.py:131
+#: paperless_mail/models.py:138
 msgid "Do not assign a correspondent"
 msgstr "不分配联系人"
 
-#: paperless_mail/models.py:132
+#: paperless_mail/models.py:139
 msgid "Use mail address"
 msgstr "使用邮件地址"
 
-#: paperless_mail/models.py:133
+#: paperless_mail/models.py:140
 msgid "Use name (or mail address if not available)"
 msgstr "使用名称 (如果不可用则使用邮箱地址)"
 
-#: paperless_mail/models.py:134
+#: paperless_mail/models.py:141
 msgid "Use correspondent selected below"
 msgstr "使用下面选择的联系人"
 
-#: paperless_mail/models.py:144
+#: paperless_mail/models.py:151
 msgid "account"
 msgstr "帐户"
 
-#: paperless_mail/models.py:150 paperless_mail/models.py:305
+#: paperless_mail/models.py:157 paperless_mail/models.py:318
 msgid "folder"
 msgstr "文件夹"
 
-#: paperless_mail/models.py:154
+#: paperless_mail/models.py:161
 msgid "Subfolders must be separated by a delimiter, often a dot ('.') or slash ('/'), but it varies by mail server."
 msgstr "子文件夹必须用分隔符分隔，通常是一个 dot ('.') 或 slash ('/')，但它因邮件服务器而异。"
 
-#: paperless_mail/models.py:160
+#: paperless_mail/models.py:167
 msgid "filter from"
 msgstr "过滤来自"
 
-#: paperless_mail/models.py:167
+#: paperless_mail/models.py:174
 msgid "filter to"
 msgstr "过滤结果"
 
-#: paperless_mail/models.py:174
+#: paperless_mail/models.py:181
 msgid "filter subject"
 msgstr "过滤主题"
 
-#: paperless_mail/models.py:181
+#: paperless_mail/models.py:188
 msgid "filter body"
 msgstr "过滤内容"
 
-#: paperless_mail/models.py:188
+#: paperless_mail/models.py:195
 msgid "filter attachment filename inclusive"
 msgstr "过滤附件文件名，包含"
 
-#: paperless_mail/models.py:200
+#: paperless_mail/models.py:207
 msgid "filter attachment filename exclusive"
 msgstr "过滤附件文件名，不包含"
 
-#: paperless_mail/models.py:205
+#: paperless_mail/models.py:212
 msgid "Do not consume documents which entirely match this filename if specified. Wildcards such as *.pdf or *invoice* are allowed. Case insensitive."
 msgstr "如果指定了文件名，不要处理完全匹配此文件名的文档。允许使用通配符，如 *.pdf 或 *发票*。不区分大小写。"
 
-#: paperless_mail/models.py:212
+#: paperless_mail/models.py:219
 msgid "maximum age"
 msgstr "存活期"
 
-#: paperless_mail/models.py:214
+#: paperless_mail/models.py:221
 msgid "Specified in days."
 msgstr "指定日期。"
 
-#: paperless_mail/models.py:218
+#: paperless_mail/models.py:225
 msgid "attachment type"
 msgstr "附件类型"
 
-#: paperless_mail/models.py:222
+#: paperless_mail/models.py:229
 msgid "Inline attachments include embedded images, so it's best to combine this option with a filename filter."
 msgstr "内嵌附件包含嵌入图像，所以最好将此选项与文件名过滤器结合起来。"
 
-#: paperless_mail/models.py:228
+#: paperless_mail/models.py:235
 msgid "consumption scope"
 msgstr "消费范围"
 
-#: paperless_mail/models.py:234
+#: paperless_mail/models.py:241
+msgid "pdf layout"
+msgstr ""
+
+#: paperless_mail/models.py:247
 msgid "action"
 msgstr "操作"
 
-#: paperless_mail/models.py:240
+#: paperless_mail/models.py:253
 msgid "action parameter"
 msgstr "操作参数"
 
-#: paperless_mail/models.py:245
+#: paperless_mail/models.py:258
 msgid "Additional parameter for the action selected above, i.e., the target folder of the move to folder action. Subfolders must be separated by dots."
 msgstr "上面选择的操作的附加参数，即移动到文件夹操作的目标文件夹。子文件夹必须用“.”来分隔。"
 
-#: paperless_mail/models.py:253
+#: paperless_mail/models.py:266
 msgid "assign title from"
 msgstr "分配标题来自"
 
-#: paperless_mail/models.py:273
+#: paperless_mail/models.py:286
 msgid "assign correspondent from"
 msgstr "分配联系人来自"
 
-#: paperless_mail/models.py:287
+#: paperless_mail/models.py:300
 msgid "Assign the rule owner to documents"
 msgstr "赋予文档拥有者权限"
 
-#: paperless_mail/models.py:313
+#: paperless_mail/models.py:326
 msgid "uid"
 msgstr "UID"
 
-#: paperless_mail/models.py:321
+#: paperless_mail/models.py:334
 msgid "subject"
 msgstr "标题"
 
-#: paperless_mail/models.py:329
+#: paperless_mail/models.py:342
 msgid "received"
 msgstr "已接收"
 
-#: paperless_mail/models.py:336
+#: paperless_mail/models.py:349
 msgid "processed"
 msgstr "已处理"
 
-#: paperless_mail/models.py:342
+#: paperless_mail/models.py:355
 msgid "status"
 msgstr "状态"
 

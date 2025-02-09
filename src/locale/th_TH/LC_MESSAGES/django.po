@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: paperless-ngx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-27 08:19-0800\n"
-"PO-Revision-Date: 2025-01-27 16:20\n"
+"POT-Creation-Date: 2025-01-28 12:17-0800\n"
+"PO-Revision-Date: 2025-02-07 18:33\n"
 "Last-Translator: \n"
 "Language-Team: Thai\n"
 "Language: th_TH\n"
@@ -90,7 +90,7 @@ msgid "Automatic"
 msgstr "อัตโนมัติ"
 
 #: documents/models.py:67 documents/models.py:433 documents/models.py:1493
-#: paperless_mail/models.py:23 paperless_mail/models.py:136
+#: paperless_mail/models.py:23 paperless_mail/models.py:143
 msgid "name"
 msgstr "ชื่อ"
 
@@ -272,7 +272,7 @@ msgstr "ข้อมูล"
 msgid "warning"
 msgstr "คำเตือน"
 
-#: documents/models.py:387 paperless_mail/models.py:350
+#: documents/models.py:387 paperless_mail/models.py:363
 msgid "error"
 msgstr "ข้อผิดพลาด"
 
@@ -812,7 +812,7 @@ msgstr ""
 msgid "filter filename"
 msgstr ""
 
-#: documents/models.py:1066 paperless_mail/models.py:193
+#: documents/models.py:1066 paperless_mail/models.py:200
 msgid "Only consume documents which entirely match this filename if specified. Wildcards such as *.pdf or *invoice* are allowed. Case insensitive."
 msgstr "ประมวลผลเอกสารที่ชื่อไฟล์ตรงกับที่ระบุ (หากมี) โดยไม่สนใจอักษรพิมพ์ใหญ่-เล็ก และสามารถระบุแบบ wildcard ได้เช่น .pdf หรือ *invoice*"
 
@@ -976,15 +976,15 @@ msgstr ""
 msgid "Assign a document title, can include some placeholders, see documentation."
 msgstr ""
 
-#: documents/models.py:1287 paperless_mail/models.py:261
+#: documents/models.py:1287 paperless_mail/models.py:274
 msgid "assign this tag"
 msgstr "กำหนดแท็กนี้"
 
-#: documents/models.py:1296 paperless_mail/models.py:269
+#: documents/models.py:1296 paperless_mail/models.py:282
 msgid "assign this document type"
 msgstr "กำหนดประเภทเอกสารนี้"
 
-#: documents/models.py:1305 paperless_mail/models.py:283
+#: documents/models.py:1305 paperless_mail/models.py:296
 msgid "assign this correspondent"
 msgstr "กำหนดผู้เขียนนี้"
 
@@ -1100,7 +1100,7 @@ msgstr ""
 msgid "workflow actions"
 msgstr ""
 
-#: documents/models.py:1495 paperless_mail/models.py:138
+#: documents/models.py:1495 paperless_mail/models.py:145
 msgid "order"
 msgstr "อันดับ"
 
@@ -1112,7 +1112,7 @@ msgstr ""
 msgid "actions"
 msgstr ""
 
-#: documents/models.py:1511 paperless_mail/models.py:147
+#: documents/models.py:1511 paperless_mail/models.py:154
 msgid "enabled"
 msgstr "เปิดใช้งานอยู่"
 
@@ -1803,154 +1803,178 @@ msgid "Process all files, including 'inline' attachments."
 msgstr "ประมวลผลทั้งหมด รวมทั้งไฟล์แนบที่อยู่ในเนื้อความ (inline)"
 
 #: paperless_mail/models.py:119
+msgid "System default"
+msgstr ""
+
+#: paperless_mail/models.py:120
+msgid "Text, then HTML"
+msgstr ""
+
+#: paperless_mail/models.py:121
+msgid "HTML, then text"
+msgstr ""
+
+#: paperless_mail/models.py:122
+msgid "HTML only"
+msgstr ""
+
+#: paperless_mail/models.py:123
+msgid "Text only"
+msgstr ""
+
+#: paperless_mail/models.py:126
 msgid "Delete"
 msgstr "ลบทิ้ง"
 
-#: paperless_mail/models.py:120
+#: paperless_mail/models.py:127
 msgid "Move to specified folder"
 msgstr "ย้ายไปยังโฟลเดอร์ที่ระบุ"
 
-#: paperless_mail/models.py:121
+#: paperless_mail/models.py:128
 msgid "Mark as read, don't process read mails"
 msgstr "ทำเครื่องหมายว่าอ่านแล้ว และไม่สนใจเมลที่อ่านแล้ว"
 
-#: paperless_mail/models.py:122
+#: paperless_mail/models.py:129
 msgid "Flag the mail, don't process flagged mails"
 msgstr "ปักธงเมล และไม่สนใจเมลที่ปักธงแล้ว"
 
-#: paperless_mail/models.py:123
+#: paperless_mail/models.py:130
 msgid "Tag the mail with specified tag, don't process tagged mails"
 msgstr "แท็กเมลด้วยแท็กที่ระบุ และไม่สนใจเมลที่แท็กแล้ว"
 
-#: paperless_mail/models.py:126
+#: paperless_mail/models.py:133
 msgid "Use subject as title"
 msgstr "ใช้หัวเรื่องเป็นชื่อเอกสาร"
 
-#: paperless_mail/models.py:127
+#: paperless_mail/models.py:134
 msgid "Use attachment filename as title"
 msgstr "ใช้ชื่อไฟล์แนบเป็นชื่อเอกสาร"
 
-#: paperless_mail/models.py:128
+#: paperless_mail/models.py:135
 msgid "Do not assign title from rule"
 msgstr ""
 
-#: paperless_mail/models.py:131
+#: paperless_mail/models.py:138
 msgid "Do not assign a correspondent"
 msgstr "ไม่ต้องกำหนดผู้เขียน"
 
-#: paperless_mail/models.py:132
+#: paperless_mail/models.py:139
 msgid "Use mail address"
 msgstr "ใช้ที่อยู่เมล"
 
-#: paperless_mail/models.py:133
+#: paperless_mail/models.py:140
 msgid "Use name (or mail address if not available)"
 msgstr "ใช้ชื่อผู้ส่ง (หากไม่มี ใช้ที่อยู่เมล)"
 
-#: paperless_mail/models.py:134
+#: paperless_mail/models.py:141
 msgid "Use correspondent selected below"
 msgstr "ใช้ชื่อผู้เขียนตามที่เลือกข้างล่าง"
 
-#: paperless_mail/models.py:144
+#: paperless_mail/models.py:151
 msgid "account"
 msgstr "บัญชี"
 
-#: paperless_mail/models.py:150 paperless_mail/models.py:305
+#: paperless_mail/models.py:157 paperless_mail/models.py:318
 msgid "folder"
 msgstr "โฟลเดอร์"
 
-#: paperless_mail/models.py:154
+#: paperless_mail/models.py:161
 msgid "Subfolders must be separated by a delimiter, often a dot ('.') or slash ('/'), but it varies by mail server."
 msgstr "โฟลเตอร์รองต้องแยกด้วยเครื่องหมายวรรคตอน ปกติแล้วจะเป็น มหัพภาค ('.') หรือ ทับ ('/') ทั้งนี้อาจจะแตกต่างกันไปตามแม่ข่ายเมล"
 
-#: paperless_mail/models.py:160
+#: paperless_mail/models.py:167
 msgid "filter from"
 msgstr "กรอง จาก"
 
-#: paperless_mail/models.py:167
+#: paperless_mail/models.py:174
 msgid "filter to"
 msgstr "กรอง ถึง"
 
-#: paperless_mail/models.py:174
+#: paperless_mail/models.py:181
 msgid "filter subject"
 msgstr "กรอง หัวเรื่อง"
 
-#: paperless_mail/models.py:181
+#: paperless_mail/models.py:188
 msgid "filter body"
 msgstr "กรอง เนื้อความ"
 
-#: paperless_mail/models.py:188
+#: paperless_mail/models.py:195
 msgid "filter attachment filename inclusive"
 msgstr ""
 
-#: paperless_mail/models.py:200
+#: paperless_mail/models.py:207
 msgid "filter attachment filename exclusive"
 msgstr ""
 
-#: paperless_mail/models.py:205
+#: paperless_mail/models.py:212
 msgid "Do not consume documents which entirely match this filename if specified. Wildcards such as *.pdf or *invoice* are allowed. Case insensitive."
 msgstr ""
 
-#: paperless_mail/models.py:212
+#: paperless_mail/models.py:219
 msgid "maximum age"
 msgstr "อายุสูงสุด"
 
-#: paperless_mail/models.py:214
+#: paperless_mail/models.py:221
 msgid "Specified in days."
 msgstr "ระบุเป็นวัน"
 
-#: paperless_mail/models.py:218
+#: paperless_mail/models.py:225
 msgid "attachment type"
 msgstr "ประเภทไฟล์แนบ"
 
-#: paperless_mail/models.py:222
+#: paperless_mail/models.py:229
 msgid "Inline attachments include embedded images, so it's best to combine this option with a filename filter."
 msgstr "ไฟล์แนบในเนื้อความ รวมไปถึงรูปภาพ (แนะนำให้ใช้ร่วมกับตัวกรองชื่อ)"
 
-#: paperless_mail/models.py:228
+#: paperless_mail/models.py:235
 msgid "consumption scope"
 msgstr "ขอบเขตการประมวลผล"
 
-#: paperless_mail/models.py:234
+#: paperless_mail/models.py:241
+msgid "pdf layout"
+msgstr ""
+
+#: paperless_mail/models.py:247
 msgid "action"
 msgstr "การดำเนินการ"
 
-#: paperless_mail/models.py:240
+#: paperless_mail/models.py:253
 msgid "action parameter"
 msgstr "พารามิเตอร์ของการดำเนินการ"
 
-#: paperless_mail/models.py:245
+#: paperless_mail/models.py:258
 msgid "Additional parameter for the action selected above, i.e., the target folder of the move to folder action. Subfolders must be separated by dots."
 msgstr "พารามิเตอร์เพิ่มเติมสำหรับการดำเนินการที่เลือก เช่น โฟลเดอร์ปลายทางที่จะย้าย โฟลเดอร์ย่อยต้องระบุโดยคั่นด้วยจุด"
 
-#: paperless_mail/models.py:253
+#: paperless_mail/models.py:266
 msgid "assign title from"
 msgstr "กำหนดชื่อจาก"
 
-#: paperless_mail/models.py:273
+#: paperless_mail/models.py:286
 msgid "assign correspondent from"
 msgstr "กำหนดผู้เขียน"
 
-#: paperless_mail/models.py:287
+#: paperless_mail/models.py:300
 msgid "Assign the rule owner to documents"
 msgstr ""
 
-#: paperless_mail/models.py:313
+#: paperless_mail/models.py:326
 msgid "uid"
 msgstr "uid"
 
-#: paperless_mail/models.py:321
+#: paperless_mail/models.py:334
 msgid "subject"
 msgstr "หัวเรื่อง"
 
-#: paperless_mail/models.py:329
+#: paperless_mail/models.py:342
 msgid "received"
 msgstr "ได้รับเมื่อ"
 
-#: paperless_mail/models.py:336
+#: paperless_mail/models.py:349
 msgid "processed"
 msgstr "ประมวลผลเมื่อ"
 
-#: paperless_mail/models.py:342
+#: paperless_mail/models.py:355
 msgid "status"
 msgstr "สถานะ"
 
