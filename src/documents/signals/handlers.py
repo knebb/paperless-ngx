@@ -1099,13 +1099,22 @@ def run_workflows(
                     original_file,
                     "rb",
                 ) as f:
-                    files = {
-                        "file": (
-                            document.original_filename,
-                            f.read(),
-                            document.mime_type,
-                        ),
-                    }
+                    if action.webhook.use_original_filename:
+                        files = {
+                            "file": (
+                                document.original_filename,
+                                f.read(),
+                                document.mime_type,
+                            ),
+                        }
+                    else:
+                        files = {
+                            "file": (
+                                document.archive_filename,
+                                f.read(),
+                                document.mime_type,
+                            ),
+                        }
             send_webhook.delay(
                 url=action.webhook.url,
                 data=data,
